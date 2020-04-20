@@ -141,6 +141,7 @@ class edit_outcomeitem_form extends moodleform {
                 $mform->addElement('text', 'aggregationcoef', get_string($coefstring, 'grades'));
             }
             $mform->addHelpButton('aggregationcoef', $coefstring, 'grades');
+            $mform->setType('aggregationcoef', PARAM_RAW);
         }
 
 /// hidden params
