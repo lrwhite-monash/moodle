@@ -53,7 +53,7 @@ class data_controller extends \core_customfield\data_controller {
     protected function value_editor_options() {
         /** @var field_controller $field */
         $field = $this->get_field();
-        return $field->value_editor_options($this->get('id') ? $this->get_context() : null);
+        return $field->value_editor_options($this->get_context());
     }
 
     /**
